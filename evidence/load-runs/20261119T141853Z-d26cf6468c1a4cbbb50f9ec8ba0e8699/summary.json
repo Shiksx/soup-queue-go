@@ -1,0 +1,19 @@
+{
+  "rate": 100,
+  "seconds": 60,
+  "requests": 6000,
+  "errors": 0,
+  "workers": 4,
+  "completed_rps": 99.94053729916563,
+  "response_p50_ms": 6.78102600022612,
+  "response_p95_ms": 50.25347299988425,
+  "response_p99_ms": 231.4186450003035,
+  "dispatch_lag_p99_ms": 280.41576100031307,
+  "dispatch_lag_max_ms": 495.1189829998839,
+  "pending_at_load_end": 2751,
+  "ingest_snapshot_elapsed": 60.56102365600009,
+  "drain_seconds": 51.589538730000186,
+  "jobs": 6000,
+  "bad_jobs": 0,
+  "invariants_pass": true
+}

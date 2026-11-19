@@ -1,0 +1,1 @@
+{"jobs" : 48000, "states" : { "succeeded" : 41754, "failed" : 251, "cancelled" : 5995 }, "effects" : 41754, "nonterminal" : 0, "leased" : 0, "effect_mismatches" : 0, "orphan_effects" : 0}

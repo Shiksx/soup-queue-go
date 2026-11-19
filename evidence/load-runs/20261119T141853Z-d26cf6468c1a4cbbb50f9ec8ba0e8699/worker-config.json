@@ -1,0 +1,110 @@
+[
+  {
+    "id": "f577c381fd5dd6a96211f4f8462bab0f455658614f42ef2552cddf9dd8e03c3f",
+    "image": "sha256:c7b32b7a1cc0495f4e40e5ab53b159c0da29cf319fe856656e7d96a3cddb7f9b",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 124428,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-19T14:18:52.908050135Z",
+      "FinishedAt": "2026-11-19T14:05:50.755629953Z"
+    },
+    "env": [
+      "https_proxy=[REDACTED: execution proxy]",
+      "NO_PROXY=localhost,127.0.0.1,::1",
+      "no_proxy=localhost,127.0.0.1,::1",
+      "DATABASE_URL=postgres://queue:queue@db:5432/queue?sslmode=disable",
+      "HTTP_PROXY=[REDACTED: execution proxy]",
+      "http_proxy=[REDACTED: execution proxy]",
+      "HTTPS_PROXY=[REDACTED: execution proxy]",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ]
+  },
+  {
+    "id": "472f97a7f741fab012f9867634c2c6642c7789d53187c3d1098b52a72927fcb2",
+    "image": "sha256:c7b32b7a1cc0495f4e40e5ab53b159c0da29cf319fe856656e7d96a3cddb7f9b",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 124353,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-19T14:18:52.644785229Z",
+      "FinishedAt": "2026-11-19T14:05:50.75329892Z"
+    },
+    "env": [
+      "HTTP_PROXY=[REDACTED: execution proxy]",
+      "http_proxy=[REDACTED: execution proxy]",
+      "HTTPS_PROXY=[REDACTED: execution proxy]",
+      "https_proxy=[REDACTED: execution proxy]",
+      "NO_PROXY=localhost,127.0.0.1,::1",
+      "no_proxy=localhost,127.0.0.1,::1",
+      "DATABASE_URL=postgres://queue:queue@db:5432/queue?sslmode=disable",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ]
+  },
+  {
+    "id": "c8b33f6b3688d61441dc713c1d33605f1545012aa58088b79a673f171938c90c",
+    "image": "sha256:c7b32b7a1cc0495f4e40e5ab53b159c0da29cf319fe856656e7d96a3cddb7f9b",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 124207,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-19T14:18:52.172872587Z",
+      "FinishedAt": "2026-11-19T14:05:50.776451135Z"
+    },
+    "env": [
+      "DATABASE_URL=postgres://queue:queue@db:5432/queue?sslmode=disable",
+      "HTTP_PROXY=[REDACTED: execution proxy]",
+      "http_proxy=[REDACTED: execution proxy]",
+      "HTTPS_PROXY=[REDACTED: execution proxy]",
+      "https_proxy=[REDACTED: execution proxy]",
+      "NO_PROXY=localhost,127.0.0.1,::1",
+      "no_proxy=localhost,127.0.0.1,::1",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ]
+  },
+  {
+    "id": "f7c54e0f1cd3f36ef4648d1c75a6118d289abbb25191e7e0215607e7242cbff7",
+    "image": "sha256:c7b32b7a1cc0495f4e40e5ab53b159c0da29cf319fe856656e7d96a3cddb7f9b",
+    "state": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 124280,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-11-19T14:18:52.440885435Z",
+      "FinishedAt": "2026-11-19T14:05:50.800821629Z"
+    },
+    "env": [
+      "DATABASE_URL=postgres://queue:queue@db:5432/queue?sslmode=disable",
+      "HTTP_PROXY=[REDACTED: execution proxy]",
+      "http_proxy=[REDACTED: execution proxy]",
+      "HTTPS_PROXY=[REDACTED: execution proxy]",
+      "https_proxy=[REDACTED: execution proxy]",
+      "NO_PROXY=localhost,127.0.0.1,::1",
+      "no_proxy=localhost,127.0.0.1,::1",
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ]
+  }
+]
