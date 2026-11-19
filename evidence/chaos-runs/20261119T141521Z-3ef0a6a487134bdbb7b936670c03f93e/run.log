@@ -1,0 +1,321 @@
+2026-11-19T14:15:21.599+00:00 +    0.01s config prefix=chaos-3ef0a6a487134bdbb7b936670c03f93e- mode=local jobs=10000 workers=8 clients=32 work_ms=120 seed=20261121 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T141521Z-3ef0a6a487134bdbb7b936670c03f93e
+2026-11-19T14:15:21.956+00:00 +    0.37s worker_start slot=0 generation=1 process=91731
+2026-11-19T14:15:21.957+00:00 +    0.37s worker_start slot=1 generation=1 process=91732
+2026-11-19T14:15:21.957+00:00 +    0.37s worker_start slot=2 generation=1 process=91733
+2026-11-19T14:15:21.958+00:00 +    0.37s worker_start slot=3 generation=1 process=91734
+2026-11-19T14:15:21.959+00:00 +    0.37s worker_start slot=4 generation=1 process=91735
+2026-11-19T14:15:21.965+00:00 +    0.38s worker_start slot=5 generation=1 process=91736
+2026-11-19T14:15:21.969+00:00 +    0.38s worker_start slot=6 generation=1 process=91757
+2026-11-19T14:15:21.976+00:00 +    0.39s worker_start slot=7 generation=1 process=91767
+2026-11-19T14:15:23.980+00:00 +    2.39s kill_requested slot=2 process=91733
+2026-11-19T14:15:23.987+00:00 +    2.40s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:15:23.991+00:00 +    2.41s worker_start slot=2 generation=2 process=92691
+2026-11-19T14:15:25.978+00:00 +    4.39s kill_requested slot=4 process=91735
+2026-11-19T14:15:26.024+00:00 +    4.44s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:15:26.030+00:00 +    4.44s worker_start slot=4 generation=2 process=93829
+2026-11-19T14:15:27.978+00:00 +    6.39s kill_requested slot=5 process=91736
+2026-11-19T14:15:28.036+00:00 +    6.45s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:28.056+00:00 +    6.47s worker_start slot=5 generation=2 process=94951
+2026-11-19T14:15:29.991+00:00 +    8.41s kill_requested slot=1 process=91732
+2026-11-19T14:15:29.997+00:00 +    8.41s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:15:30.027+00:00 +    8.44s worker_start slot=1 generation=2 process=96251
+2026-11-19T14:15:31.977+00:00 +   10.39s kill_requested slot=5 process=94951
+2026-11-19T14:15:31.995+00:00 +   10.41s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:32.008+00:00 +   10.42s worker_start slot=5 generation=3 process=97487
+2026-11-19T14:15:33.982+00:00 +   12.40s kill_requested slot=1 process=96251
+2026-11-19T14:15:33.993+00:00 +   12.41s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:15:33.999+00:00 +   12.41s worker_start slot=1 generation=3 process=98792
+2026-11-19T14:15:35.981+00:00 +   14.40s kill_requested slot=0 process=91731
+2026-11-19T14:15:36.002+00:00 +   14.42s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:15:36.043+00:00 +   14.46s worker_start slot=0 generation=2 process=100014
+2026-11-19T14:15:37.982+00:00 +   16.40s kill_requested slot=2 process=92691
+2026-11-19T14:15:37.990+00:00 +   16.40s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:15:37.993+00:00 +   16.41s worker_start slot=2 generation=3 process=101336
+2026-11-19T14:15:39.978+00:00 +   18.39s kill_requested slot=2 process=101336
+2026-11-19T14:15:40.008+00:00 +   18.42s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:15:40.033+00:00 +   18.45s worker_start slot=2 generation=4 process=102407
+2026-11-19T14:15:42.035+00:00 +   20.45s kill_requested slot=5 process=97487
+2026-11-19T14:15:42.083+00:00 +   20.50s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:42.090+00:00 +   20.51s worker_start slot=5 generation=4 process=103505
+2026-11-19T14:15:44.023+00:00 +   22.44s kill_requested slot=5 process=103505
+2026-11-19T14:15:44.164+00:00 +   22.58s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:44.242+00:00 +   22.66s worker_start slot=5 generation=5 process=104103
+2026-11-19T14:15:45.990+00:00 +   24.40s kill_requested slot=2 process=102407
+2026-11-19T14:15:46.046+00:00 +   24.46s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:15:46.140+00:00 +   24.55s worker_start slot=2 generation=5 process=104600
+2026-11-19T14:15:47.996+00:00 +   26.41s kill_requested slot=2 process=104600
+2026-11-19T14:15:48.010+00:00 +   26.42s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:15:48.037+00:00 +   26.45s worker_start slot=2 generation=6 process=105503
+2026-11-19T14:15:50.082+00:00 +   28.50s kill_requested slot=5 process=104103
+2026-11-19T14:15:50.305+00:00 +   28.72s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:50.485+00:00 +   28.90s worker_start slot=5 generation=6 process=106347
+2026-11-19T14:15:51.977+00:00 +   30.39s kill_requested slot=6 process=91757
+2026-11-19T14:15:51.985+00:00 +   30.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:15:51.990+00:00 +   30.40s worker_start slot=6 generation=2 process=106987
+2026-11-19T14:15:53.987+00:00 +   32.40s kill_requested slot=5 process=106347
+2026-11-19T14:15:53.998+00:00 +   32.41s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:54.023+00:00 +   32.44s worker_start slot=5 generation=7 process=107937
+2026-11-19T14:15:56.003+00:00 +   34.42s kill_requested slot=5 process=107937
+2026-11-19T14:15:56.043+00:00 +   34.46s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:15:56.064+00:00 +   34.48s worker_start slot=5 generation=8 process=108722
+2026-11-19T14:15:57.988+00:00 +   36.40s kill_requested slot=1 process=98792
+2026-11-19T14:15:58.066+00:00 +   36.48s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:15:58.081+00:00 +   36.50s worker_start slot=1 generation=4 process=109301
+2026-11-19T14:15:59.990+00:00 +   38.40s kill_requested slot=3 process=91734
+2026-11-19T14:16:00.051+00:00 +   38.47s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:00.170+00:00 +   38.58s worker_start slot=3 generation=2 process=109908
+2026-11-19T14:16:01.983+00:00 +   40.40s kill_requested slot=6 process=106987
+2026-11-19T14:16:01.991+00:00 +   40.41s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:16:02.042+00:00 +   40.46s worker_start slot=6 generation=3 process=110471
+2026-11-19T14:16:03.982+00:00 +   42.40s kill_requested slot=1 process=109301
+2026-11-19T14:16:03.988+00:00 +   42.40s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:16:03.999+00:00 +   42.41s worker_start slot=1 generation=5 process=111156
+2026-11-19T14:16:05.982+00:00 +   44.40s kill_requested slot=7 process=91767
+2026-11-19T14:16:06.038+00:00 +   44.45s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:16:06.116+00:00 +   44.53s worker_start slot=7 generation=2 process=111914
+2026-11-19T14:16:07.979+00:00 +   46.39s kill_requested slot=1 process=111156
+2026-11-19T14:16:08.006+00:00 +   46.42s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:16:08.044+00:00 +   46.46s worker_start slot=1 generation=6 process=112582
+2026-11-19T14:16:10.164+00:00 +   48.58s kill_requested slot=5 process=108722
+2026-11-19T14:16:10.234+00:00 +   48.65s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:16:10.246+00:00 +   48.66s worker_start slot=5 generation=9 process=113395
+2026-11-19T14:16:12.035+00:00 +   50.45s kill_requested slot=2 process=105503
+2026-11-19T14:16:12.068+00:00 +   50.48s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:16:12.086+00:00 +   50.50s worker_start slot=2 generation=7 process=113966
+2026-11-19T14:16:14.053+00:00 +   52.47s kill_requested slot=1 process=112582
+2026-11-19T14:16:14.100+00:00 +   52.51s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:16:14.148+00:00 +   52.56s worker_start slot=1 generation=7 process=114631
+2026-11-19T14:16:16.003+00:00 +   54.42s kill_requested slot=3 process=109908
+2026-11-19T14:16:16.024+00:00 +   54.44s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:16.032+00:00 +   54.45s worker_start slot=3 generation=3 process=115279
+2026-11-19T14:16:17.983+00:00 +   56.40s kill_requested slot=3 process=115279
+2026-11-19T14:16:17.998+00:00 +   56.41s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:18.008+00:00 +   56.42s worker_start slot=3 generation=4 process=116340
+2026-11-19T14:16:19.982+00:00 +   58.40s kill_requested slot=5 process=113395
+2026-11-19T14:16:20.002+00:00 +   58.42s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:16:20.074+00:00 +   58.49s worker_start slot=5 generation=10 process=117421
+2026-11-19T14:16:21.977+00:00 +   60.39s kill_requested slot=0 process=100014
+2026-11-19T14:16:22.049+00:00 +   60.46s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:16:22.054+00:00 +   60.47s worker_start slot=0 generation=3 process=118465
+2026-11-19T14:16:22.108+00:00 +   60.52s clients_done keys_seen=10000 requests=20000 errors=0 http_retries=0 cancel_wins=2000
+2026-11-19T14:16:23.093+00:00 +   61.51s db_progress status={'cancelled': 2000, 'succeeded': 1781, 'failed': 19, 'running': 8, 'queued': 6192} kills=30
+2026-11-19T14:16:23.977+00:00 +   62.39s kill_requested slot=5 process=117421
+2026-11-19T14:16:23.981+00:00 +   62.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:16:23.984+00:00 +   62.40s worker_start slot=5 generation=11 process=118544
+2026-11-19T14:16:25.977+00:00 +   64.39s kill_requested slot=6 process=110471
+2026-11-19T14:16:25.979+00:00 +   64.39s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:16:25.986+00:00 +   64.40s worker_start slot=6 generation=4 process=118655
+2026-11-19T14:16:27.977+00:00 +   66.39s kill_requested slot=0 process=118465
+2026-11-19T14:16:27.982+00:00 +   66.40s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:16:27.985+00:00 +   66.40s worker_start slot=0 generation=4 process=118740
+2026-11-19T14:16:29.977+00:00 +   68.39s kill_requested slot=3 process=116340
+2026-11-19T14:16:29.979+00:00 +   68.39s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:29.980+00:00 +   68.39s worker_start slot=3 generation=5 process=118825
+2026-11-19T14:16:31.977+00:00 +   70.39s kill_requested slot=3 process=118825
+2026-11-19T14:16:31.978+00:00 +   70.39s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:31.982+00:00 +   70.40s worker_start slot=3 generation=6 process=118909
+2026-11-19T14:16:33.343+00:00 +   71.76s db_progress status={'cancelled': 2000, 'succeeded': 2289, 'failed': 24, 'running': 5, 'queued': 5682} kills=35
+2026-11-19T14:16:33.978+00:00 +   72.39s kill_requested slot=2 process=113966
+2026-11-19T14:16:33.986+00:00 +   72.40s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:16:33.992+00:00 +   72.41s worker_start slot=2 generation=8 process=118982
+2026-11-19T14:16:35.977+00:00 +   74.39s kill_requested slot=2 process=118982
+2026-11-19T14:16:35.985+00:00 +   74.40s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:16:35.991+00:00 +   74.41s worker_start slot=2 generation=9 process=119043
+2026-11-19T14:16:37.978+00:00 +   76.39s kill_requested slot=4 process=93829
+2026-11-19T14:16:37.985+00:00 +   76.40s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:16:37.989+00:00 +   76.40s worker_start slot=4 generation=3 process=119166
+2026-11-19T14:16:39.981+00:00 +   78.40s kill_requested slot=5 process=118544
+2026-11-19T14:16:39.992+00:00 +   78.41s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:16:39.996+00:00 +   78.41s worker_start slot=5 generation=12 process=119246
+2026-11-19T14:16:41.977+00:00 +   80.39s kill_requested slot=5 process=119246
+2026-11-19T14:16:41.984+00:00 +   80.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:16:41.989+00:00 +   80.40s worker_start slot=5 generation=13 process=119323
+2026-11-19T14:16:43.609+00:00 +   82.02s db_progress status={'cancelled': 2000, 'succeeded': 2801, 'failed': 29, 'running': 5, 'queued': 5165} kills=40
+2026-11-19T14:16:43.977+00:00 +   82.39s kill_requested slot=6 process=118655
+2026-11-19T14:16:43.978+00:00 +   82.39s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:16:43.979+00:00 +   82.39s worker_start slot=6 generation=5 process=119413
+2026-11-19T14:16:45.977+00:00 +   84.39s kill_requested slot=6 process=119413
+2026-11-19T14:16:45.985+00:00 +   84.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:16:45.991+00:00 +   84.41s worker_start slot=6 generation=6 process=119491
+2026-11-19T14:16:47.977+00:00 +   86.39s kill_requested slot=7 process=111914
+2026-11-19T14:16:47.979+00:00 +   86.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:16:47.981+00:00 +   86.40s worker_start slot=7 generation=3 process=119567
+2026-11-19T14:16:49.981+00:00 +   88.40s kill_requested slot=6 process=119491
+2026-11-19T14:16:49.989+00:00 +   88.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:16:49.991+00:00 +   88.41s worker_start slot=6 generation=7 process=119633
+2026-11-19T14:16:51.977+00:00 +   90.39s kill_requested slot=4 process=119166
+2026-11-19T14:16:51.993+00:00 +   90.41s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:16:52.000+00:00 +   90.41s worker_start slot=4 generation=4 process=119664
+2026-11-19T14:16:53.981+00:00 +   92.40s kill_requested slot=0 process=118740
+2026-11-19T14:16:53.991+00:00 +   92.41s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:16:54.001+00:00 +   92.42s worker_start slot=0 generation=5 process=119734
+2026-11-19T14:16:54.839+00:00 +   93.25s db_progress status={'cancelled': 2000, 'succeeded': 3311, 'failed': 35, 'running': 7, 'queued': 4647} kills=46
+2026-11-19T14:16:55.977+00:00 +   94.39s kill_requested slot=3 process=118909
+2026-11-19T14:16:55.986+00:00 +   94.40s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:55.990+00:00 +   94.40s worker_start slot=3 generation=7 process=119831
+2026-11-19T14:16:57.977+00:00 +   96.39s kill_requested slot=3 process=119831
+2026-11-19T14:16:57.985+00:00 +   96.40s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:16:57.987+00:00 +   96.40s worker_start slot=3 generation=8 process=119911
+2026-11-19T14:16:59.977+00:00 +   98.39s kill_requested slot=7 process=119567
+2026-11-19T14:16:59.980+00:00 +   98.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:16:59.985+00:00 +   98.40s worker_start slot=7 generation=4 process=119994
+2026-11-19T14:17:01.977+00:00 +  100.39s kill_requested slot=7 process=119994
+2026-11-19T14:17:01.978+00:00 +  100.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:01.980+00:00 +  100.39s worker_start slot=7 generation=5 process=120083
+2026-11-19T14:17:03.978+00:00 +  102.39s kill_requested slot=6 process=119633
+2026-11-19T14:17:03.986+00:00 +  102.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:17:03.991+00:00 +  102.41s worker_start slot=6 generation=8 process=120157
+2026-11-19T14:17:05.979+00:00 +  104.39s kill_requested slot=7 process=120083
+2026-11-19T14:17:05.983+00:00 +  104.40s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:06.033+00:00 +  104.45s worker_start slot=7 generation=6 process=120194
+2026-11-19T14:17:07.267+00:00 +  105.68s db_progress status={'cancelled': 2000, 'succeeded': 3841, 'failed': 40, 'running': 9, 'queued': 4110} kills=52
+2026-11-19T14:17:07.977+00:00 +  106.39s kill_requested slot=7 process=120194
+2026-11-19T14:17:07.981+00:00 +  106.40s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:07.982+00:00 +  106.40s worker_start slot=7 generation=7 process=120245
+2026-11-19T14:17:09.981+00:00 +  108.40s kill_requested slot=1 process=114631
+2026-11-19T14:17:09.986+00:00 +  108.40s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:17:09.998+00:00 +  108.41s worker_start slot=1 generation=8 process=120321
+2026-11-19T14:17:11.977+00:00 +  110.39s kill_requested slot=7 process=120245
+2026-11-19T14:17:11.995+00:00 +  110.41s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:11.998+00:00 +  110.41s worker_start slot=7 generation=8 process=120398
+2026-11-19T14:17:13.977+00:00 +  112.39s kill_requested slot=5 process=119323
+2026-11-19T14:17:13.987+00:00 +  112.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:17:13.989+00:00 +  112.40s worker_start slot=5 generation=14 process=120475
+2026-11-19T14:17:15.977+00:00 +  114.39s kill_requested slot=1 process=120321
+2026-11-19T14:17:15.984+00:00 +  114.40s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:17:15.986+00:00 +  114.40s worker_start slot=1 generation=9 process=120548
+2026-11-19T14:17:17.977+00:00 +  116.39s kill_requested slot=6 process=120157
+2026-11-19T14:17:17.980+00:00 +  116.39s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:17:17.982+00:00 +  116.40s worker_start slot=6 generation=9 process=120623
+2026-11-19T14:17:19.092+00:00 +  117.51s db_progress status={'cancelled': 2000, 'succeeded': 4386, 'failed': 46, 'running': 8, 'queued': 3560} kills=58
+2026-11-19T14:17:19.980+00:00 +  118.39s kill_requested slot=1 process=120548
+2026-11-19T14:17:19.987+00:00 +  118.40s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:17:19.990+00:00 +  118.40s worker_start slot=1 generation=10 process=120700
+2026-11-19T14:17:21.977+00:00 +  120.39s kill_requested slot=7 process=120398
+2026-11-19T14:17:21.980+00:00 +  120.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:21.985+00:00 +  120.40s worker_start slot=7 generation=9 process=120803
+2026-11-19T14:17:23.977+00:00 +  122.39s kill_requested slot=5 process=120475
+2026-11-19T14:17:23.983+00:00 +  122.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:17:23.985+00:00 +  122.40s worker_start slot=5 generation=15 process=120876
+2026-11-19T14:17:25.978+00:00 +  124.39s kill_requested slot=4 process=119664
+2026-11-19T14:17:25.995+00:00 +  124.41s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:17:25.998+00:00 +  124.41s worker_start slot=4 generation=5 process=120954
+2026-11-19T14:17:27.977+00:00 +  126.39s kill_requested slot=1 process=120700
+2026-11-19T14:17:27.984+00:00 +  126.40s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:17:27.989+00:00 +  126.40s worker_start slot=1 generation=11 process=121030
+2026-11-19T14:17:29.624+00:00 +  128.04s db_progress status={'cancelled': 2000, 'succeeded': 4879, 'failed': 51, 'running': 8, 'queued': 3062} kills=63
+2026-11-19T14:17:29.977+00:00 +  128.39s kill_requested slot=2 process=119043
+2026-11-19T14:17:29.984+00:00 +  128.40s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:17:29.985+00:00 +  128.40s worker_start slot=2 generation=10 process=121109
+2026-11-19T14:17:31.978+00:00 +  130.39s kill_requested slot=4 process=120954
+2026-11-19T14:17:31.987+00:00 +  130.40s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:17:31.991+00:00 +  130.41s worker_start slot=4 generation=6 process=121187
+2026-11-19T14:17:33.977+00:00 +  132.39s kill_requested slot=3 process=119911
+2026-11-19T14:17:33.984+00:00 +  132.40s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:17:33.988+00:00 +  132.40s worker_start slot=3 generation=9 process=121279
+2026-11-19T14:17:35.981+00:00 +  134.40s kill_requested slot=4 process=121187
+2026-11-19T14:17:36.028+00:00 +  134.44s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:17:36.045+00:00 +  134.46s worker_start slot=4 generation=7 process=121337
+2026-11-19T14:17:37.977+00:00 +  136.39s kill_requested slot=0 process=119734
+2026-11-19T14:17:37.983+00:00 +  136.40s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:17:37.985+00:00 +  136.40s worker_start slot=0 generation=6 process=121413
+2026-11-19T14:17:39.978+00:00 +  138.39s kill_requested slot=6 process=120623
+2026-11-19T14:17:39.983+00:00 +  138.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:17:39.988+00:00 +  138.40s worker_start slot=6 generation=10 process=121485
+2026-11-19T14:17:41.978+00:00 +  140.39s kill_requested slot=5 process=120876
+2026-11-19T14:17:41.986+00:00 +  140.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:17:41.990+00:00 +  140.40s worker_start slot=5 generation=16 process=121545
+2026-11-19T14:17:42.231+00:00 +  140.65s db_progress status={'cancelled': 2000, 'succeeded': 5422, 'failed': 56, 'running': 9, 'queued': 2513} kills=70
+2026-11-19T14:17:43.977+00:00 +  142.39s kill_requested slot=7 process=120803
+2026-11-19T14:17:43.980+00:00 +  142.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:43.982+00:00 +  142.40s worker_start slot=7 generation=10 process=121621
+2026-11-19T14:17:45.977+00:00 +  144.39s kill_requested slot=4 process=121337
+2026-11-19T14:17:45.981+00:00 +  144.40s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:17:45.983+00:00 +  144.40s worker_start slot=4 generation=8 process=121701
+2026-11-19T14:17:47.977+00:00 +  146.39s kill_requested slot=5 process=121545
+2026-11-19T14:17:47.984+00:00 +  146.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:17:47.987+00:00 +  146.40s worker_start slot=5 generation=17 process=121752
+2026-11-19T14:17:49.977+00:00 +  148.39s kill_requested slot=0 process=121413
+2026-11-19T14:17:49.980+00:00 +  148.39s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:17:49.983+00:00 +  148.40s worker_start slot=0 generation=7 process=121817
+2026-11-19T14:17:51.977+00:00 +  150.39s kill_requested slot=7 process=121621
+2026-11-19T14:17:51.985+00:00 +  150.40s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:51.991+00:00 +  150.41s worker_start slot=7 generation=11 process=121892
+2026-11-19T14:17:53.266+00:00 +  151.68s db_progress status={'cancelled': 2000, 'succeeded': 5909, 'failed': 61, 'running': 2, 'queued': 2028} kills=75
+2026-11-19T14:17:53.977+00:00 +  152.39s kill_requested slot=2 process=121109
+2026-11-19T14:17:53.993+00:00 +  152.41s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:17:54.021+00:00 +  152.44s worker_start slot=2 generation=11 process=121958
+2026-11-19T14:17:55.977+00:00 +  154.39s kill_requested slot=6 process=121485
+2026-11-19T14:17:55.981+00:00 +  154.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:17:55.984+00:00 +  154.40s worker_start slot=6 generation=11 process=122030
+2026-11-19T14:17:57.977+00:00 +  156.39s kill_requested slot=2 process=121958
+2026-11-19T14:17:57.981+00:00 +  156.40s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:17:57.983+00:00 +  156.40s worker_start slot=2 generation=12 process=122105
+2026-11-19T14:17:59.977+00:00 +  158.39s kill_requested slot=7 process=121892
+2026-11-19T14:17:59.981+00:00 +  158.40s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:17:59.982+00:00 +  158.40s worker_start slot=7 generation=12 process=122206
+2026-11-19T14:18:01.977+00:00 +  160.39s kill_requested slot=3 process=121279
+2026-11-19T14:18:01.984+00:00 +  160.40s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:18:01.985+00:00 +  160.40s worker_start slot=3 generation=10 process=122301
+2026-11-19T14:18:03.906+00:00 +  162.32s db_progress status={'cancelled': 2000, 'succeeded': 6429, 'failed': 67, 'running': 7, 'queued': 1497} kills=80
+2026-11-19T14:18:03.977+00:00 +  162.39s kill_requested slot=7 process=122206
+2026-11-19T14:18:03.978+00:00 +  162.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:18:03.979+00:00 +  162.39s worker_start slot=7 generation=13 process=122376
+2026-11-19T14:18:05.977+00:00 +  164.39s kill_requested slot=1 process=121030
+2026-11-19T14:18:05.995+00:00 +  164.41s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:18:05.999+00:00 +  164.41s worker_start slot=1 generation=12 process=122450
+2026-11-19T14:18:07.980+00:00 +  166.39s kill_requested slot=5 process=121752
+2026-11-19T14:18:07.982+00:00 +  166.40s worker_exit slot=5 deliberate_kill=True exit=-9
+2026-11-19T14:18:07.984+00:00 +  166.40s worker_start slot=5 generation=18 process=122528
+2026-11-19T14:18:09.977+00:00 +  168.39s kill_requested slot=1 process=122450
+2026-11-19T14:18:09.981+00:00 +  168.40s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:18:09.983+00:00 +  168.40s worker_start slot=1 generation=13 process=122602
+2026-11-19T14:18:11.977+00:00 +  170.39s kill_requested slot=6 process=122030
+2026-11-19T14:18:11.986+00:00 +  170.40s worker_exit slot=6 deliberate_kill=True exit=-9
+2026-11-19T14:18:11.988+00:00 +  170.40s worker_start slot=6 generation=12 process=122727
+2026-11-19T14:18:13.979+00:00 +  172.39s kill_requested slot=4 process=121701
+2026-11-19T14:18:13.985+00:00 +  172.40s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:18:13.988+00:00 +  172.40s worker_start slot=4 generation=9 process=122804
+2026-11-19T14:18:15.320+00:00 +  173.73s db_progress status={'cancelled': 2000, 'succeeded': 6996, 'failed': 73, 'running': 9, 'queued': 922} kills=86
+2026-11-19T14:18:15.977+00:00 +  174.39s kill_requested slot=3 process=122301
+2026-11-19T14:18:15.985+00:00 +  174.40s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:18:15.988+00:00 +  174.40s worker_start slot=3 generation=11 process=122871
+2026-11-19T14:18:17.977+00:00 +  176.39s kill_requested slot=4 process=122804
+2026-11-19T14:18:17.978+00:00 +  176.39s worker_exit slot=4 deliberate_kill=True exit=-9
+2026-11-19T14:18:17.980+00:00 +  176.39s worker_start slot=4 generation=10 process=122954
+2026-11-19T14:18:19.977+00:00 +  178.39s kill_requested slot=0 process=121817
+2026-11-19T14:18:19.985+00:00 +  178.40s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:18:19.987+00:00 +  178.40s worker_start slot=0 generation=8 process=123066
+2026-11-19T14:18:21.977+00:00 +  180.39s kill_requested slot=0 process=123066
+2026-11-19T14:18:21.980+00:00 +  180.39s worker_exit slot=0 deliberate_kill=True exit=-9
+2026-11-19T14:18:21.984+00:00 +  180.40s worker_start slot=0 generation=9 process=123154
+2026-11-19T14:18:23.981+00:00 +  182.40s kill_requested slot=3 process=122871
+2026-11-19T14:18:24.007+00:00 +  182.42s worker_exit slot=3 deliberate_kill=True exit=-9
+2026-11-19T14:18:24.012+00:00 +  182.43s worker_start slot=3 generation=12 process=123228
+2026-11-19T14:18:25.978+00:00 +  184.39s kill_requested slot=2 process=122105
+2026-11-19T14:18:25.980+00:00 +  184.39s worker_exit slot=2 deliberate_kill=True exit=-9
+2026-11-19T14:18:25.982+00:00 +  184.40s worker_start slot=2 generation=13 process=123304
+2026-11-19T14:18:26.833+00:00 +  185.25s db_progress status={'cancelled': 2000, 'succeeded': 7574, 'failed': 79, 'running': 9, 'queued': 338} kills=92
+2026-11-19T14:18:27.977+00:00 +  186.39s kill_requested slot=7 process=122376
+2026-11-19T14:18:27.981+00:00 +  186.40s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:18:27.983+00:00 +  186.40s worker_start slot=7 generation=14 process=123405
+2026-11-19T14:18:29.977+00:00 +  188.39s kill_requested slot=1 process=122602
+2026-11-19T14:18:29.979+00:00 +  188.39s worker_exit slot=1 deliberate_kill=True exit=-9
+2026-11-19T14:18:29.981+00:00 +  188.40s worker_start slot=1 generation=14 process=123500
+2026-11-19T14:18:31.977+00:00 +  190.39s kill_requested slot=7 process=123405
+2026-11-19T14:18:31.978+00:00 +  190.39s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:18:31.980+00:00 +  190.39s worker_start slot=7 generation=15 process=123589
+2026-11-19T14:18:33.977+00:00 +  192.39s kill_requested slot=7 process=123589
+2026-11-19T14:18:33.985+00:00 +  192.40s worker_exit slot=7 deliberate_kill=True exit=-9
+2026-11-19T14:18:33.986+00:00 +  192.40s worker_start slot=7 generation=16 process=123668
+2026-11-19T14:18:34.983+00:00 +  193.40s db_progress status={'cancelled': 2000, 'succeeded': 7917, 'failed': 83} kills=96
+2026-11-19T14:18:34.989+00:00 +  193.40s worker_exit slot=0 deliberate_kill=False exit=0
+2026-11-19T14:18:34.997+00:00 +  193.41s worker_exit slot=1 deliberate_kill=False exit=0
+2026-11-19T14:18:35.002+00:00 +  193.42s worker_exit slot=2 deliberate_kill=False exit=0
+2026-11-19T14:18:35.006+00:00 +  193.42s worker_exit slot=3 deliberate_kill=False exit=0
+2026-11-19T14:18:35.012+00:00 +  193.43s worker_exit slot=4 deliberate_kill=False exit=0
+2026-11-19T14:18:35.028+00:00 +  193.44s worker_exit slot=5 deliberate_kill=False exit=0
+2026-11-19T14:18:35.036+00:00 +  193.45s worker_exit slot=6 deliberate_kill=False exit=0
+2026-11-19T14:18:35.037+00:00 +  193.45s worker_exit slot=7 deliberate_kill=False exit=0
+2026-11-19T14:18:35.591+00:00 +  194.01s assertion_summary observed=10000 expected=10000 worker_kills=96 reclaimed_jobs=82 effects=7917
+2026-11-19T14:18:35.593+00:00 +  194.01s RESULT PASS
