@@ -1,0 +1,128 @@
+api-1  | 2026-11-19T14:05:35.827312619Z 2026/11/19 14:05:35 API listening on :8080
+db-1   | 2026-11-19T14:18:48.837607081Z 
+db-1   | 2026-11-19T14:18:48.837645310Z PostgreSQL Database directory appears to contain a database; Skipping initialization
+db-1   | 2026-11-19T14:18:48.837648374Z 
+db-1   | 2026-11-19T14:18:48.879610006Z 2026-11-19 14:18:48.879 UTC [1] LOG:  starting PostgreSQL 16.16 (Debian 16.16-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1   | 2026-11-19T14:18:48.879752575Z 2026-11-19 14:18:48.879 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1   | 2026-11-19T14:18:48.879769675Z 2026-11-19 14:18:48.879 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1   | 2026-11-19T14:18:48.887497998Z 2026-11-19 14:18:48.887 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1   | 2026-11-19T14:18:48.891924713Z 2026-11-19 14:18:48.891 UTC [29] LOG:  database system was shut down at 2026-11-19 14:18:46 UTC
+db-1   | 2026-11-19T14:18:48.900382875Z 2026-11-19 14:18:48.900 UTC [1] LOG:  database system is ready to accept connections
+db-1   | 2026-11-19T14:22:30.165226181Z 2026-11-19 14:22:30.161 UTC [43] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:22:30.165443161Z 2026-11-19 14:22:30.161 UTC [43] STATEMENT:  
+db-1   | 2026-11-19T14:22:30.165448750Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:22:30.165452173Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:22:30.165454737Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:22:30.165457457Z 	    ORDER BY id
+db-1   | 2026-11-19T14:22:30.165459966Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:22:30.165462439Z 	)
+db-1   | 2026-11-19T14:22:30.165464774Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:22:30.165467003Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:22:30.165469274Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:22:30.165471398Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:22:30.165473472Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:22:30.361020614Z 2026-11-19 14:22:30.360 UTC [949] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:22:30.361052468Z 2026-11-19 14:22:30.360 UTC [949] STATEMENT:  
+db-1   | 2026-11-19T14:22:30.361056436Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:22:30.361059630Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:22:30.361062259Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:22:30.361065353Z 	    ORDER BY id
+db-1   | 2026-11-19T14:22:30.361068057Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:22:30.361070879Z 	)
+db-1   | 2026-11-19T14:22:30.361073480Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:22:30.361103711Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:22:30.361107202Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:22:30.361118313Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:22:30.361120953Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:22:30.388708758Z 2026-11-19 14:22:30.388 UTC [938] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:22:30.388733906Z 2026-11-19 14:22:30.388 UTC [938] STATEMENT:  
+db-1   | 2026-11-19T14:22:30.388737177Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:22:30.388739933Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:22:30.388742104Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:22:30.388744656Z 	    ORDER BY id
+db-1   | 2026-11-19T14:22:30.388746574Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:22:30.388748403Z 	)
+db-1   | 2026-11-19T14:22:30.388750213Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:22:30.388751942Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:22:30.388753983Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:22:30.388756412Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:22:30.388758361Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:22:30.496905080Z 2026-11-19 14:22:30.496 UTC [948] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:22:30.496937237Z 2026-11-19 14:22:30.496 UTC [948] STATEMENT:  
+db-1   | 2026-11-19T14:22:30.496939863Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:22:30.496941690Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:22:30.496943154Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:22:30.496944931Z 	    ORDER BY id
+db-1   | 2026-11-19T14:22:30.496946156Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:22:30.496947308Z 	)
+db-1   | 2026-11-19T14:22:30.496948580Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:22:30.496949742Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:22:30.496951110Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:22:30.496952335Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:22:30.496953482Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:22:30.569075176Z 2026-11-19 14:22:30.568 UTC [44] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:22:30.569203451Z 2026-11-19 14:22:30.568 UTC [44] STATEMENT:  
+db-1   | 2026-11-19T14:22:30.569205673Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:22:30.569207664Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:22:30.569209053Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:22:30.569210665Z 	    ORDER BY id
+db-1   | 2026-11-19T14:22:30.569211806Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:22:30.569220601Z 	)
+db-1   | 2026-11-19T14:22:30.569221918Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:22:30.569223359Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:22:30.569224707Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:22:30.569225888Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:22:30.569227235Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:23:48.986460743Z 2026-11-19 14:23:48.985 UTC [27] LOG:  checkpoint starting: time
+db-1   | 2026-11-19T14:24:44.078899147Z 2026-11-19 14:24:44.075 UTC [1548] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:24:44.078942275Z 2026-11-19 14:24:44.075 UTC [1548] STATEMENT:  
+db-1   | 2026-11-19T14:24:44.078945051Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:24:44.078947471Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:24:44.078949243Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:24:44.078951044Z 	    ORDER BY id
+db-1   | 2026-11-19T14:24:44.078952613Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:24:44.078954491Z 	)
+db-1   | 2026-11-19T14:24:44.078955924Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:24:44.078957327Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:24:44.078958681Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:24:44.078960130Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:24:44.078961659Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:24:44.082950668Z 2026-11-19 14:24:44.082 UTC [1551] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:24:44.082992504Z 2026-11-19 14:24:44.082 UTC [1551] STATEMENT:  
+db-1   | 2026-11-19T14:24:44.082996271Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:24:44.082999108Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:24:44.083001263Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:24:44.083004109Z 	    ORDER BY id
+db-1   | 2026-11-19T14:24:44.083006751Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:24:44.083008917Z 	)
+db-1   | 2026-11-19T14:24:44.083011002Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:24:44.083012977Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:24:44.083015262Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:24:44.083017486Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:24:44.083019790Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:24:44.168041037Z 2026-11-19 14:24:44.158 UTC [1560] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:24:44.168444836Z 2026-11-19 14:24:44.158 UTC [1560] STATEMENT:  
+db-1   | 2026-11-19T14:24:44.168453232Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:24:44.168455903Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:24:44.168457509Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:24:44.168458927Z 	    ORDER BY id
+db-1   | 2026-11-19T14:24:44.168460099Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:24:44.168461202Z 	)
+db-1   | 2026-11-19T14:24:44.168462424Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:24:44.168467917Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:24:44.168469661Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:24:44.168470832Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:24:44.168472304Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until
+db-1   | 2026-11-19T14:24:44.225465391Z 2026-11-19 14:24:44.225 UTC [1563] ERROR:  canceling statement due to user request
+db-1   | 2026-11-19T14:24:44.225622807Z 2026-11-19 14:24:44.225 UTC [1563] STATEMENT:  
+db-1   | 2026-11-19T14:24:44.225627016Z 	WITH candidate AS (
+db-1   | 2026-11-19T14:24:44.225628779Z 	    SELECT id FROM jobs
+db-1   | 2026-11-19T14:24:44.225630144Z 	    WHERE status='queued' OR (status='running' AND lease_until <= statement_timestamp())
+db-1   | 2026-11-19T14:24:44.225631668Z 	    ORDER BY id
+db-1   | 2026-11-19T14:24:44.225632853Z 	    FOR UPDATE SKIP LOCKED LIMIT 1
+db-1   | 2026-11-19T14:24:44.225634198Z 	)
+db-1   | 2026-11-19T14:24:44.225635573Z 	UPDATE jobs j
+db-1   | 2026-11-19T14:24:44.225636692Z 	SET status='running', attempt=j.attempt+1,
+db-1   | 2026-11-19T14:24:44.225637809Z 	    lease_until=clock_timestamp()+($1::bigint * interval '1 millisecond')
+db-1   | 2026-11-19T14:24:44.225639154Z 	FROM candidate c WHERE j.id=c.id
+db-1   | 2026-11-19T14:24:44.225640256Z 	RETURNING j.id, j.input, j.fail, j.status, j.attempt, j.lease_until

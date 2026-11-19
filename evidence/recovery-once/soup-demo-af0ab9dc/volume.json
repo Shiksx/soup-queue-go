@@ -1,0 +1,1 @@
+[{"Type":"volume","Name":"soup-demo-af0ab9dc_pgdata","Source":"[REDACTED: host storage path]","Destination":"/var/lib/postgresql/data","Driver":"local","Mode":"rw","RW":true,"Propagation":""}]

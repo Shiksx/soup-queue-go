@@ -1,0 +1,3 @@
+$ go build -o /tmp/soup-tools/queue .
+error obtaining VCS status: exit status 128
+	Use -buildvcs=false to disable VCS stamping.

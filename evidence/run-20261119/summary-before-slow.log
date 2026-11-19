@@ -1,0 +1,128 @@
+{
+  "chaos": [
+    {
+      "directory": "evidence/chaos-runs/20261119T140551Z-0ecf6071a5074219b29960684efb4f7b",
+      "result": "PASS",
+      "config": "2026-11-19T14:05:51.936+00:00 +    0.04s config prefix=chaos-0ecf6071a5074219b29960684efb4f7b- mode=docker jobs=10000 workers=8 clients=32 work_ms=120 seed=20261119 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T140551Z-0ecf6071a5074219b29960684efb4f7b",
+      "kills": 20,
+      "kill_interval_seconds": {
+        "min": 4.949999999999989,
+        "median": 7.75,
+        "max": 36.389999999999986
+      },
+      "client_keys": 10000,
+      "client_errors": 0,
+      "cancel_wins": 1997,
+      "jobs": 10000,
+      "states": {
+        "failed": 84,
+        "succeeded": 7919,
+        "cancelled": 1997
+      },
+      "effects": 7919,
+      "reclaimed": 18,
+      "max_attempt": 2,
+      "bad_effect_rows": 0,
+      "leased_rows": 0,
+      "orphan_effects": 0
+    },
+    {
+      "directory": "evidence/chaos-runs/20261119T141042Z-ff62570c370f43f28430b36658238187",
+      "result": "PASS",
+      "config": "2026-11-19T14:10:42.649+00:00 +    0.02s config prefix=chaos-ff62570c370f43f28430b36658238187- mode=docker jobs=10000 workers=8 clients=32 work_ms=120 seed=20261120 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T141042Z-ff62570c370f43f28430b36658238187",
+      "kills": 65,
+      "kill_interval_seconds": {
+        "min": 1.9699999999999989,
+        "median": 2.1799999999999997,
+        "max": 8.170000000000002
+      },
+      "client_keys": 10000,
+      "client_errors": 0,
+      "cancel_wins": 1998,
+      "jobs": 10000,
+      "states": {
+        "failed": 84,
+        "succeeded": 7918,
+        "cancelled": 1998
+      },
+      "effects": 7918,
+      "reclaimed": 61,
+      "max_attempt": 3,
+      "bad_effect_rows": 0,
+      "leased_rows": 0,
+      "orphan_effects": 0
+    },
+    {
+      "directory": "evidence/chaos-runs/20261119T141521Z-3ef0a6a487134bdbb7b936670c03f93e",
+      "result": "PASS",
+      "config": "2026-11-19T14:15:21.599+00:00 +    0.01s config prefix=chaos-3ef0a6a487134bdbb7b936670c03f93e- mode=local jobs=10000 workers=8 clients=32 work_ms=120 seed=20261121 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T141521Z-3ef0a6a487134bdbb7b936670c03f93e",
+      "kills": 96,
+      "kill_interval_seconds": {
+        "min": 1.8700000000000045,
+        "median": 2.0,
+        "max": 2.1899999999999977
+      },
+      "client_keys": 10000,
+      "client_errors": 0,
+      "cancel_wins": 2000,
+      "jobs": 10000,
+      "states": {
+        "cancelled": 2000,
+        "succeeded": 7917,
+        "failed": 83
+      },
+      "effects": 7917,
+      "reclaimed": 82,
+      "max_attempt": 4,
+      "bad_effect_rows": 0,
+      "leased_rows": 0,
+      "orphan_effects": 0
+    }
+  ],
+  "load": [
+    {
+      "directory": "evidence/load-runs/20261119T141853Z-d26cf6468c1a4cbbb50f9ec8ba0e8699",
+      "rate": 100,
+      "seconds": 60,
+      "requests": 6000,
+      "errors": 0,
+      "workers": 4,
+      "completed_rps": 99.94053729916563,
+      "response_p50_ms": 6.78102600022612,
+      "response_p95_ms": 50.25347299988425,
+      "response_p99_ms": 231.4186450003035,
+      "dispatch_lag_p99_ms": 280.41576100031307,
+      "dispatch_lag_max_ms": 495.1189829998839,
+      "pending_at_load_end": 2751,
+      "ingest_snapshot_elapsed": 60.56102365600009,
+      "drain_seconds": 51.589538730000186,
+      "jobs": 6000,
+      "bad_jobs": 0,
+      "invariants_pass": true
+    },
+    {
+      "directory": "evidence/load-runs/20261119T142103Z-245b3d8dcf9641768a9e1f1864d410a3",
+      "rate": 100,
+      "seconds": 60,
+      "requests": 6000,
+      "errors": 0,
+      "workers": 8,
+      "completed_rps": 99.90168423668486,
+      "response_p50_ms": 13.898307000090426,
+      "response_p95_ms": 103.65925899986905,
+      "response_p99_ms": 270.559564999985,
+      "dispatch_lag_p99_ms": 155.17614000009416,
+      "dispatch_lag_max_ms": 286.39445500039074,
+      "pending_at_load_end": 1431,
+      "ingest_snapshot_elapsed": 60.72007492800003,
+      "drain_seconds": 17.245990794000136,
+      "jobs": 6000,
+      "bad_jobs": 0,
+      "invariants_pass": true
+    },
+    {
+      "directory": "evidence/load-runs/20261119T142237Z-7167709b875d4579850f98e64bc03ca5",
+      "result": "INCOMPLETE"
+    }
+  ]
+}

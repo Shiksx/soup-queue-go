@@ -1,0 +1,9 @@
+  status   | count 
+-----------+-------
+ cancelled |  1798
+ failed    |    29
+ queued    |  4461
+ running   |     5
+ succeeded |  2726
+(5 rows)
+

@@ -1,0 +1,11 @@
+NAME                     IMAGE              COMMAND                  SERVICE   CREATED              STATUS                        PORTS
+soup-practice-api-1      soup-queue:local   "queue api"              api       30 seconds ago       Up 15 seconds                 127.0.0.1:8080->8080/tcp
+soup-practice-db-1       postgres:16        "docker-entrypoint.s…"   db        About a minute ago   Up About a minute (healthy)   5432/tcp
+soup-practice-worker-1   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 12 seconds                 
+soup-practice-worker-2   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 13 seconds                 
+soup-practice-worker-3   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 15 seconds                 
+soup-practice-worker-4   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 14 seconds                 
+soup-practice-worker-5   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 12 seconds                 
+soup-practice-worker-6   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 13 seconds                 
+soup-practice-worker-7   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 14 seconds                 
+soup-practice-worker-8   soup-queue:local   "queue worker"           worker    30 seconds ago       Up 12 seconds                 

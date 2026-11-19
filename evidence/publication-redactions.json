@@ -1,0 +1,72 @@
+{
+  "policy": "Only execution proxy addresses and host storage/runtime paths replaced with explicit redaction markers. Job data, counts, timestamps and failure outcomes are retained.",
+  "originals_retained_separately": true,
+  "files": [
+    {
+      "file": "evidence/load-runs/20261119T141853Z-d26cf6468c1a4cbbb50f9ec8ba0e8699/worker-config.json",
+      "edits": [
+        {
+          "category": "execution proxy address",
+          "replacements": 16
+        }
+      ],
+      "original_sha256": "bb54347d670ea42bf15f72c31e643b581f4a01ed2339355d1337020e77918b7a",
+      "publication_sha256": "b67c16572fa94cdb0b31c4175e4c9cb00351688d5189681db55e81e04f0eeb43"
+    },
+    {
+      "file": "evidence/load-runs/20261119T142103Z-245b3d8dcf9641768a9e1f1864d410a3/worker-config.json",
+      "edits": [
+        {
+          "category": "execution proxy address",
+          "replacements": 32
+        }
+      ],
+      "original_sha256": "8f1cb365bda7c88fd95393c8c64844fac4d924b7082d84331cf323d197340e7b",
+      "publication_sha256": "f1bd96d9e48ad28e97cb7323f946193ac95a886c2cd72e5bbcb522f3f4db4780"
+    },
+    {
+      "file": "evidence/load-runs/20261119T142237Z-7167709b875d4579850f98e64bc03ca5/worker-config.json",
+      "edits": [
+        {
+          "category": "execution proxy address",
+          "replacements": 32
+        }
+      ],
+      "original_sha256": "ad725e6a52d654a9642f8977eb1e4cb97f77d8b8fc94bcbcaa7d32f00a701010",
+      "publication_sha256": "8183dcd9efc5f6ed7eb138f7d94297a5106e45c471e330d4e3d6921cdc5dbe72"
+    },
+    {
+      "file": "evidence/recovery-once/soup-demo-af0ab9dc/volume.json",
+      "edits": [
+        {
+          "category": "host storage path",
+          "replacements": 1
+        }
+      ],
+      "original_sha256": "c38d2264f9576d72cd6b49362398c68506619932416acd8a82893a0989a3963f",
+      "publication_sha256": "d47b004257bbcdaa7d261648530c9cac7abdbecd22e7ba6482841c240c0362ca"
+    },
+    {
+      "file": "evidence/run-20261119/environment.log",
+      "edits": [
+        {
+          "category": "runtime directory",
+          "replacements": 1
+        }
+      ],
+      "original_sha256": "2d65e9198593a8d42161b3f1dbc70956bc5c7d9a51d7f30a5b7565f6c9f16254",
+      "publication_sha256": "008f7219613121ab5b24fdd266af903013848fa30977ae06fc044740c313cd20"
+    },
+    {
+      "file": "evidence/run-20261119/images.jsonl",
+      "edits": [
+        {
+          "category": "host storage path",
+          "replacements": 3
+        }
+      ],
+      "original_sha256": "d3d2f462467115673d9a469ba4fc0ac3f9379367b001c2f8aa1644ea0fd39b8d",
+      "publication_sha256": "0d1c00461024ba817ff9a7b248e74590a4424ad86fdc4ca638f6ca149fb64112"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 476B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.24-bookworm
+#2 DONE 0.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 60B done
+#3 DONE 0.0s
+
+#4 [build 1/6] FROM docker.io/library/golang:1.24-bookworm@sha256:1a6d4452c65dea36aac2e2d606b01b4a029ec90cc1ae53890540ce6173ea77ac
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 197B done
+#5 DONE 0.0s
+
+#6 [build 4/6] RUN --mount=type=secret,id=ca_bundle     if [ -f /run/secrets/ca_bundle ]; then       SSL_CERT_FILE=/run/secrets/ca_bundle go mod download;     else go mod download; fi
+#6 CACHED
+
+#7 [build 2/6] WORKDIR /src
+#7 CACHED
+
+#8 [build 3/6] COPY go.mod go.sum ./
+#8 CACHED
+
+#9 [build 5/6] COPY *.go schema.sql ./
+#9 CACHED
+
+#10 [build 6/6] RUN CGO_ENABLED=0 go build -trimpath -o /out/queue .
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 2.6s done
+#11 writing image sha256:cb2330bf5ac6759d8328b5cd753c04c565e4e5ef63e7521752ff5983130e7ac4 done
+#11 naming to docker.io/library/soup-queue-test:local done
+#11 DONE 2.6s

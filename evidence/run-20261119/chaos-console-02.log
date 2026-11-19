@@ -1,0 +1,227 @@
+2026-11-19T14:10:42.649+00:00 +    0.02s config prefix=chaos-ff62570c370f43f28430b36658238187- mode=docker jobs=10000 workers=8 clients=32 work_ms=120 seed=20261120 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T141042Z-ff62570c370f43f28430b36658238187
+2026-11-19T14:10:48.049+00:00 +    5.42s worker_start slot=0 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:10:53.381+00:00 +   10.75s worker_start slot=1 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w1-1
+2026-11-19T14:10:58.735+00:00 +   16.10s worker_start slot=2 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:11:03.654+00:00 +   21.02s worker_start slot=3 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w3-1
+2026-11-19T14:11:09.025+00:00 +   26.39s worker_start slot=4 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:11:14.929+00:00 +   32.30s worker_start slot=5 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:11:19.067+00:00 +   36.44s worker_start slot=6 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:11:21.741+00:00 +   39.11s worker_start slot=7 generation=1 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:11:23.991+00:00 +   41.36s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:11:25.724+00:00 +   43.09s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:11:27.215+00:00 +   44.58s worker_start slot=7 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:11:28.763+00:00 +   46.13s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:11:30.726+00:00 +   48.09s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:11:33.559+00:00 +   50.93s worker_start slot=6 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:11:34.826+00:00 +   52.19s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:11:37.625+00:00 +   54.99s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:11:40.362+00:00 +   57.73s worker_start slot=4 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:11:41.725+00:00 +   59.09s kill_requested slot=3 process=chaos-ff62570c370f43f28430b36658238187-w3-1
+2026-11-19T14:11:43.547+00:00 +   60.92s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:11:45.146+00:00 +   62.51s worker_start slot=3 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w3-1 restarted=true
+2026-11-19T14:11:46.439+00:00 +   63.81s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:11:49.549+00:00 +   66.92s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:11:52.835+00:00 +   70.20s worker_start slot=2 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:11:54.614+00:00 +   71.98s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:11:58.142+00:00 +   75.51s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:12:01.446+00:00 +   78.82s worker_start slot=6 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:12:02.694+00:00 +   80.06s kill_requested slot=1 process=chaos-ff62570c370f43f28430b36658238187-w1-1
+2026-11-19T14:12:05.609+00:00 +   82.98s worker_exit slot=1 deliberate_kill=True exit=137
+2026-11-19T14:12:08.186+00:00 +   85.55s worker_start slot=1 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w1-1 restarted=true
+2026-11-19T14:12:09.321+00:00 +   86.69s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:12:11.187+00:00 +   88.56s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:12:14.312+00:00 +   91.68s worker_start slot=6 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:12:15.623+00:00 +   92.99s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:12:18.542+00:00 +   95.91s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:12:21.073+00:00 +   98.44s worker_start slot=2 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:12:22.472+00:00 +   99.84s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:12:24.695+00:00 +  102.06s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:12:26.779+00:00 +  104.15s worker_start slot=2 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:12:28.426+00:00 +  105.79s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:12:31.154+00:00 +  108.52s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:12:33.424+00:00 +  110.79s worker_start slot=4 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:12:33.908+00:00 +  111.28s clients_done keys_seen=10000 requests=20000 errors=0 http_retries=0 cancel_wins=1998
+2026-11-19T14:12:34.482+00:00 +  111.85s kill_requested slot=3 process=chaos-ff62570c370f43f28430b36658238187-w3-1
+2026-11-19T14:12:34.856+00:00 +  112.22s db_progress status={'failed': 24, 'succeeded': 2156, 'cancelled': 1998, 'queued': 5814, 'running': 8} kills=11
+2026-11-19T14:12:35.022+00:00 +  112.39s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:12:35.727+00:00 +  113.10s worker_start slot=3 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w3-1 restarted=true
+2026-11-19T14:12:36.782+00:00 +  114.15s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:12:37.404+00:00 +  114.77s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:12:37.885+00:00 +  115.25s worker_start slot=7 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:12:38.957+00:00 +  116.33s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:12:39.648+00:00 +  117.02s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:12:40.180+00:00 +  117.55s worker_start slot=5 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:12:41.226+00:00 +  118.59s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:12:41.834+00:00 +  119.20s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:12:42.319+00:00 +  119.69s worker_start slot=5 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:12:43.363+00:00 +  120.73s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:12:44.083+00:00 +  121.45s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:12:44.639+00:00 +  122.01s worker_start slot=2 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:12:45.346+00:00 +  122.71s db_progress status={'failed': 29, 'succeeded': 2695, 'cancelled': 1998, 'running': 7, 'queued': 5271} kills=16
+2026-11-19T14:12:45.689+00:00 +  123.06s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:12:46.259+00:00 +  123.63s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:12:47.078+00:00 +  124.45s worker_start slot=4 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:12:48.127+00:00 +  125.50s kill_requested slot=1 process=chaos-ff62570c370f43f28430b36658238187-w1-1
+2026-11-19T14:12:48.917+00:00 +  126.29s worker_exit slot=1 deliberate_kill=True exit=137
+2026-11-19T14:12:49.425+00:00 +  126.79s worker_start slot=1 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w1-1 restarted=true
+2026-11-19T14:12:50.481+00:00 +  127.85s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:12:51.175+00:00 +  128.54s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:12:51.792+00:00 +  129.16s worker_start slot=4 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:12:52.912+00:00 +  130.28s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:12:53.644+00:00 +  131.01s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:12:54.119+00:00 +  131.49s worker_start slot=0 generation=2 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:12:55.159+00:00 +  132.53s kill_requested slot=1 process=chaos-ff62570c370f43f28430b36658238187-w1-1
+2026-11-19T14:12:55.804+00:00 +  133.17s worker_exit slot=1 deliberate_kill=True exit=137
+2026-11-19T14:12:56.424+00:00 +  133.79s worker_start slot=1 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w1-1 restarted=true
+2026-11-19T14:12:56.744+00:00 +  134.11s db_progress status={'failed': 35, 'succeeded': 3271, 'cancelled': 1998, 'running': 9, 'queued': 4687} kills=21
+2026-11-19T14:12:57.482+00:00 +  134.85s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:12:57.978+00:00 +  135.35s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:12:58.588+00:00 +  135.96s worker_start slot=5 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:12:59.660+00:00 +  137.03s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:13:00.250+00:00 +  137.62s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:13:00.670+00:00 +  138.04s worker_start slot=6 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:13:01.725+00:00 +  139.09s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:02.196+00:00 +  139.57s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:02.653+00:00 +  140.02s worker_start slot=5 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:03.704+00:00 +  141.07s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:04.117+00:00 +  141.49s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:04.870+00:00 +  142.24s worker_start slot=5 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:05.904+00:00 +  143.27s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:13:06.374+00:00 +  143.74s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:13:06.776+00:00 +  144.14s db_progress status={'failed': 41, 'succeeded': 3791, 'cancelled': 1998, 'running': 6, 'queued': 4164} kills=26
+2026-11-19T14:13:06.816+00:00 +  144.19s worker_start slot=6 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:13:07.931+00:00 +  145.30s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:08.556+00:00 +  145.93s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:09.017+00:00 +  146.39s worker_start slot=5 generation=7 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:10.156+00:00 +  147.53s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:10.701+00:00 +  148.07s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:11.123+00:00 +  148.49s worker_start slot=5 generation=8 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:12.167+00:00 +  149.54s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:13:12.792+00:00 +  150.16s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:13:13.266+00:00 +  150.63s worker_start slot=0 generation=3 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:13:14.310+00:00 +  151.68s kill_requested slot=3 process=chaos-ff62570c370f43f28430b36658238187-w3-1
+2026-11-19T14:13:14.946+00:00 +  152.31s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:13:15.411+00:00 +  152.78s worker_start slot=3 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w3-1 restarted=true
+2026-11-19T14:13:16.488+00:00 +  153.86s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:17.057+00:00 +  154.43s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:17.723+00:00 +  155.09s worker_start slot=5 generation=9 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:18.081+00:00 +  155.45s db_progress status={'failed': 46, 'succeeded': 4368, 'cancelled': 1998, 'running': 9, 'queued': 3579} kills=31
+2026-11-19T14:13:18.781+00:00 +  156.15s kill_requested slot=3 process=chaos-ff62570c370f43f28430b36658238187-w3-1
+2026-11-19T14:13:19.410+00:00 +  156.78s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:13:20.090+00:00 +  157.46s worker_start slot=3 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w3-1 restarted=true
+2026-11-19T14:13:21.147+00:00 +  158.52s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:13:21.845+00:00 +  159.21s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:13:22.563+00:00 +  159.93s worker_start slot=6 generation=7 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:13:23.610+00:00 +  160.98s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:13:24.200+00:00 +  161.57s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:13:24.781+00:00 +  162.15s worker_start slot=7 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:13:25.851+00:00 +  163.22s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:13:26.504+00:00 +  163.87s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:13:27.000+00:00 +  164.37s worker_start slot=0 generation=4 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:13:28.071+00:00 +  165.44s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:13:28.416+00:00 +  165.78s db_progress status={'failed': 52, 'succeeded': 4894, 'cancelled': 1998, 'running': 8, 'queued': 3048} kills=35
+2026-11-19T14:13:28.562+00:00 +  165.93s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:13:29.033+00:00 +  166.40s worker_start slot=6 generation=8 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:13:30.080+00:00 +  167.45s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:30.600+00:00 +  167.97s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:31.092+00:00 +  168.46s worker_start slot=5 generation=10 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:32.122+00:00 +  169.49s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:13:32.590+00:00 +  169.96s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:13:33.089+00:00 +  170.46s worker_start slot=0 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:13:34.146+00:00 +  171.51s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:34.643+00:00 +  172.01s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:35.138+00:00 +  172.51s worker_start slot=5 generation=11 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:36.200+00:00 +  173.57s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:13:36.620+00:00 +  173.99s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:13:37.154+00:00 +  174.52s worker_start slot=7 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:13:38.192+00:00 +  175.56s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:13:38.626+00:00 +  176.00s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:13:39.264+00:00 +  176.63s worker_start slot=7 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:13:39.553+00:00 +  176.92s db_progress status={'failed': 58, 'succeeded': 5469, 'cancelled': 1998, 'running': 8, 'queued': 2467} kills=41
+2026-11-19T14:13:40.296+00:00 +  177.67s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:13:40.847+00:00 +  178.22s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:13:41.470+00:00 +  178.84s worker_start slot=7 generation=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:13:42.522+00:00 +  179.89s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:13:43.040+00:00 +  180.41s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:13:43.525+00:00 +  180.89s worker_start slot=6 generation=9 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:13:44.592+00:00 +  181.96s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:13:45.084+00:00 +  182.45s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:13:45.571+00:00 +  182.94s worker_start slot=4 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:13:46.615+00:00 +  183.98s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:13:47.024+00:00 +  184.39s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:13:47.590+00:00 +  184.96s worker_start slot=6 generation=10 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:13:48.628+00:00 +  186.00s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:13:49.133+00:00 +  186.50s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:13:50.060+00:00 +  187.43s db_progress status={'failed': 64, 'succeeded': 5994, 'cancelled': 1998, 'running': 6, 'queued': 1938} kills=46
+2026-11-19T14:13:50.061+00:00 +  187.43s worker_start slot=5 generation=12 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:13:51.104+00:00 +  188.47s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:13:51.682+00:00 +  189.05s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:13:52.300+00:00 +  189.67s worker_start slot=0 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:13:53.417+00:00 +  190.79s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:13:53.820+00:00 +  191.19s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:13:54.291+00:00 +  191.66s worker_start slot=7 generation=8 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:13:55.422+00:00 +  192.79s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:13:55.868+00:00 +  193.24s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:13:56.481+00:00 +  193.85s worker_start slot=0 generation=7 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:13:57.522+00:00 +  194.89s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:13:57.944+00:00 +  195.31s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:13:58.397+00:00 +  195.77s worker_start slot=4 generation=7 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:13:59.530+00:00 +  196.90s kill_requested slot=1 process=chaos-ff62570c370f43f28430b36658238187-w1-1
+2026-11-19T14:13:59.960+00:00 +  197.33s worker_exit slot=1 deliberate_kill=True exit=137
+2026-11-19T14:14:00.337+00:00 +  197.71s worker_start slot=1 generation=5 process=chaos-ff62570c370f43f28430b36658238187-w1-1 restarted=true
+2026-11-19T14:14:01.213+00:00 +  198.58s db_progress status={'failed': 69, 'succeeded': 6552, 'cancelled': 1998, 'running': 9, 'queued': 1372} kills=51
+2026-11-19T14:14:01.545+00:00 +  198.91s kill_requested slot=3 process=chaos-ff62570c370f43f28430b36658238187-w3-1
+2026-11-19T14:14:02.005+00:00 +  199.37s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:14:02.433+00:00 +  199.80s worker_start slot=3 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w3-1 restarted=true
+2026-11-19T14:14:03.530+00:00 +  200.90s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:14:03.967+00:00 +  201.34s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:14:04.506+00:00 +  201.88s worker_start slot=2 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:14:05.575+00:00 +  202.94s kill_requested slot=1 process=chaos-ff62570c370f43f28430b36658238187-w1-1
+2026-11-19T14:14:06.187+00:00 +  203.56s worker_exit slot=1 deliberate_kill=True exit=137
+2026-11-19T14:14:06.744+00:00 +  204.11s worker_start slot=1 generation=6 process=chaos-ff62570c370f43f28430b36658238187-w1-1 restarted=true
+2026-11-19T14:14:07.807+00:00 +  205.18s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:14:08.244+00:00 +  205.61s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:14:08.583+00:00 +  205.95s worker_start slot=2 generation=7 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:14:09.778+00:00 +  207.15s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:14:10.155+00:00 +  207.52s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:14:10.502+00:00 +  207.87s worker_start slot=5 generation=13 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:14:11.807+00:00 +  209.18s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:14:12.240+00:00 +  209.61s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:14:12.763+00:00 +  210.13s worker_start slot=4 generation=8 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:14:12.859+00:00 +  210.23s db_progress status={'failed': 75, 'succeeded': 7128, 'cancelled': 1998, 'running': 8, 'queued': 791} kills=57
+2026-11-19T14:14:13.801+00:00 +  211.17s kill_requested slot=5 process=chaos-ff62570c370f43f28430b36658238187-w5-1
+2026-11-19T14:14:14.285+00:00 +  211.66s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:14:14.725+00:00 +  212.09s worker_start slot=5 generation=14 process=chaos-ff62570c370f43f28430b36658238187-w5-1 restarted=true
+2026-11-19T14:14:15.810+00:00 +  213.18s kill_requested slot=6 process=chaos-ff62570c370f43f28430b36658238187-w6-1
+2026-11-19T14:14:16.223+00:00 +  213.59s worker_exit slot=6 deliberate_kill=True exit=137
+2026-11-19T14:14:16.554+00:00 +  213.92s worker_start slot=6 generation=11 process=chaos-ff62570c370f43f28430b36658238187-w6-1 restarted=true
+2026-11-19T14:14:17.795+00:00 +  215.16s kill_requested slot=2 process=chaos-ff62570c370f43f28430b36658238187-w2-1
+2026-11-19T14:14:18.176+00:00 +  215.54s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:14:18.522+00:00 +  215.89s worker_start slot=2 generation=8 process=chaos-ff62570c370f43f28430b36658238187-w2-1 restarted=true
+2026-11-19T14:14:19.793+00:00 +  217.16s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:14:20.169+00:00 +  217.54s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:14:20.609+00:00 +  217.98s worker_start slot=0 generation=8 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:14:21.813+00:00 +  219.18s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:14:22.245+00:00 +  219.61s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:14:22.606+00:00 +  219.98s worker_start slot=0 generation=9 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:14:23.802+00:00 +  221.17s kill_requested slot=7 process=chaos-ff62570c370f43f28430b36658238187-w7-1
+2026-11-19T14:14:24.103+00:00 +  221.47s db_progress status={'failed': 81, 'succeeded': 7712, 'cancelled': 1998, 'running': 8, 'queued': 201} kills=62
+2026-11-19T14:14:24.213+00:00 +  221.58s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:14:24.573+00:00 +  221.94s worker_start slot=7 generation=9 process=chaos-ff62570c370f43f28430b36658238187-w7-1 restarted=true
+2026-11-19T14:14:25.808+00:00 +  223.18s kill_requested slot=4 process=chaos-ff62570c370f43f28430b36658238187-w4-1
+2026-11-19T14:14:26.214+00:00 +  223.58s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:14:26.591+00:00 +  223.96s worker_start slot=4 generation=9 process=chaos-ff62570c370f43f28430b36658238187-w4-1 restarted=true
+2026-11-19T14:14:27.906+00:00 +  225.28s kill_requested slot=0 process=chaos-ff62570c370f43f28430b36658238187-w0-1
+2026-11-19T14:14:28.263+00:00 +  225.63s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:14:28.730+00:00 +  226.10s worker_start slot=0 generation=10 process=chaos-ff62570c370f43f28430b36658238187-w0-1 restarted=true
+2026-11-19T14:14:29.179+00:00 +  226.55s db_progress status={'failed': 84, 'succeeded': 7918, 'cancelled': 1998} kills=65
+2026-11-19T14:14:30.400+00:00 +  227.77s worker_exit slot=0 deliberate_kill=False exit=0
+2026-11-19T14:14:31.458+00:00 +  228.83s worker_exit slot=1 deliberate_kill=False exit=0
+2026-11-19T14:14:32.629+00:00 +  230.00s worker_exit slot=2 deliberate_kill=False exit=0
+2026-11-19T14:14:36.185+00:00 +  233.55s worker_exit slot=3 deliberate_kill=False exit=0
+2026-11-19T14:14:37.545+00:00 +  234.91s worker_exit slot=4 deliberate_kill=False exit=0
+2026-11-19T14:14:39.077+00:00 +  236.45s worker_exit slot=5 deliberate_kill=False exit=0
+2026-11-19T14:14:39.847+00:00 +  237.22s worker_exit slot=6 deliberate_kill=False exit=0
+2026-11-19T14:14:40.493+00:00 +  237.86s worker_exit slot=7 deliberate_kill=False exit=0
+2026-11-19T14:14:41.932+00:00 +  239.30s assertion_summary observed=10000 expected=10000 worker_kills=65 reclaimed_jobs=61 effects=7918
+2026-11-19T14:14:41.933+00:00 +  239.30s RESULT PASS

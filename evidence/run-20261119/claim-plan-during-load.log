@@ -1,0 +1,8 @@
+                                                          QUERY PLAN                                                          
+------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=0.29..1.36 rows=1 width=14)
+   ->  LockRows  (cost=0.29..2277.40 rows=2119 width=14)
+         ->  Index Scan using jobs_pkey on jobs  (cost=0.29..2256.21 rows=2119 width=14)
+               Filter: ((status = 'queued'::text) OR ((status = 'running'::text) AND (lease_until <= statement_timestamp())))
+(4 rows)
+

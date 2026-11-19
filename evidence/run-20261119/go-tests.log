@@ -1,0 +1,183 @@
+go version go1.24.13 linux/amd64
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.30s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.15s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: cancelled
+--- PASS: TestCancelVersusComplete (0.30s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.93s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.44s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.22s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.34s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.15s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: succeeded
+--- PASS: TestCancelVersusComplete (0.71s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.96s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.76s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.84s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.77s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.22s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: succeeded
+--- PASS: TestCancelVersusComplete (0.27s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.43s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.21s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.11s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.33s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.21s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: succeeded
+--- PASS: TestCancelVersusComplete (0.28s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.39s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.16s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.14s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.30s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.21s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: succeeded
+--- PASS: TestCancelVersusComplete (0.22s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.33s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.15s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.16s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.31s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.21s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: cancelled
+--- PASS: TestCancelVersusComplete (0.43s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.29s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.17s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.16s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.29s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.15s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: cancelled
+--- PASS: TestCancelVersusComplete (0.27s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.34s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.25s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.27s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.24s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.12s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: succeeded
+--- PASS: TestCancelVersusComplete (0.29s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.36s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.28s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.17s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.27s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.28s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: cancelled
+--- PASS: TestCancelVersusComplete (0.23s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.32s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.27s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.24s)
+=== RUN   TestClaimsAndIsolation
+    queue_test.go:161: READ COMMITTED: skipped locked head; 1 winner among 8 simultaneous claimants
+--- PASS: TestClaimsAndIsolation (0.37s)
+=== RUN   TestZombieAndClockSkew
+    queue_test.go:194: expired lease rejected before and after reassignment; client-supplied +/-24h lease representations ignored; system/DB clock jumps not tested
+--- PASS: TestZombieAndClockSkew (0.24s)
+=== RUN   TestCancelVersusComplete
+    queue_test.go:257: both orders verified; simultaneous cancel/complete winner: cancelled
+--- PASS: TestCancelVersusComplete (0.55s)
+=== RUN   TestHTTPIdempotencyAndPagination
+    queue_test.go:349: 16 concurrent POSTs: one 201, fifteen 200, same ID; mismatching payload 409; paginated exactly two jobs
+--- PASS: TestHTTPIdempotencyAndPagination (0.29s)
+=== RUN   TestLeaseExpiresWhileFinishWaitsForLock
+    queue_test.go:382: observed finish blocked on row lock; lease expired before release; stale completion rejected
+--- PASS: TestLeaseExpiresWhileFinishWaitsForLock (0.22s)
+=== RUN   TestEffectAndTerminalStateAreAtomic
+    queue_test.go:404: forced SQL error on effect insert rolled back terminal transition
+--- PASS: TestEffectAndTerminalStateAreAtomic (0.15s)
+PASS
+ok  	soup-queue	20.113s

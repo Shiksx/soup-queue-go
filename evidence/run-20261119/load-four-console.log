@@ -1,0 +1,10 @@
+2026-11-19T14:18:53.314+00:00 +    0.02s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:18:54.320+00:00 +    1.03s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:18:55.325+00:00 +    2.03s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:18:56.334+00:00 +    3.04s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:18:57.343+00:00 +    4.05s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:18:58.354+00:00 +    5.06s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:18:59.364+00:00 +    6.07s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:19:00.423+00:00 +    7.13s preflight_health_retry <HTTPError 503: 'Service Unavailable'>
+2026-11-19T14:19:01.693+00:00 +    8.40s load rate=100 duration=60 unique_posts=6000 no_retries=true
+2026-11-19T14:20:53.329+00:00 +  120.04s {"rate": 100, "seconds": 60, "requests": 6000, "errors": 0, "workers": 4, "completed_rps": 99.94053729916563, "response_p50_ms": 6.78102600022612, "response_p95_ms": 50.25347299988425, "response_p99_ms": 231.4186450003035, "dispatch_lag_p99_ms": 280.41576100031307, "dispatch_lag_max_ms": 495.1189829998839, "pending_at_load_end": 2751, "ingest_snapshot_elapsed": 60.56102365600009, "drain_seconds": 51.589538730000186, "jobs": 6000, "bad_jobs": 0, "invariants_pass": true}

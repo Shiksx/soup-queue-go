@@ -1,0 +1,47 @@
+{
+  "purpose": "Publication preparation only; repository contents have not been uploaded to GitHub.",
+  "scope": "All regular files in this publication tree read locally as UTF-8; JSON and JSONL parsed; source evidence files compared byte-for-byte except declared redactions.",
+  "evidence_source_files_preserved": 294,
+  "redacted_files": 6,
+  "redaction_replacements": 85,
+  "evidence_deleted": 0,
+  "caches_excluded": 4,
+  "excluded_categories": [
+    "private conversation",
+    "personal learning note",
+    "working diff containing personal learning material",
+    "compiled executable",
+    "Python cache",
+    "Library transfer helpers and transfer records"
+  ],
+  "synthetic_snapshot_rows_checked": 66000,
+  "known_nonsecrets": [
+    "fixed local demo PostgreSQL username/password queue/queue",
+    "localhost endpoints",
+    "synthetic job keys and training/load inputs",
+    "image and source checksums",
+    "ephemeral container identifiers"
+  ],
+  "credential_check_categories": [
+    "PEM private keys",
+    "GitHub tokens",
+    "cloud access key IDs",
+    "API token patterns",
+    "Authorization headers",
+    "password/token assignment strings",
+    "connection URLs",
+    "container environment variables",
+    "personal emails and home paths"
+  ],
+  "found_actual_credentials": 0,
+  "personal_material_check": "No private correspondence, employer material, Library attachment identifiers or personal contact details found in the publication payload. Candidate first name and short-run outcome included only for the explicitly authorized AI disclosure.",
+  "candidate_verification_scope": "Vladimir personally ran and reported only soup-demo-d4cd4645. The earlier summary operator AI field was hardcoded; preserved raw evidence is explained in RESULTS.md.",
+  "limits": "A local content/format scan and manual review of findings reduce accidental disclosure risk but are not a mathematical guarantee that every unknown secret format can be recognized. No external scanning service was used.",
+  "validation_observed": {
+    "python_control_tests": "2 passed (unittest discover -s scripts -v)",
+    "shell_syntax": "sh -n scripts/run-remaining.sh: exit 0",
+    "compose_configuration": "docker compose config --quiet: exit 0",
+    "bulk_tests_rerun_for_packaging": false,
+    "go_application_code_changed": false
+  }
+}

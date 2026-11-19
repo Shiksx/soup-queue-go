@@ -1,0 +1,45 @@
+{
+  "chaos": [
+    {
+      "directory": "evidence/chaos-runs/20261119T140551Z-0ecf6071a5074219b29960684efb4f7b",
+      "result": "PASS",
+      "config": "2026-11-19T14:05:51.936+00:00 +    0.04s config prefix=chaos-0ecf6071a5074219b29960684efb4f7b- mode=docker jobs=10000 workers=8 clients=32 work_ms=120 seed=20261119 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T140551Z-0ecf6071a5074219b29960684efb4f7b",
+      "kills": 20,
+      "kill_interval_seconds": {
+        "min": 4.949999999999989,
+        "median": 7.75,
+        "max": 36.389999999999986
+      },
+      "client_keys": 10000,
+      "client_errors": 0,
+      "cancel_wins": 1997,
+      "jobs": 10000,
+      "states": {
+        "failed": 84,
+        "succeeded": 7919,
+        "cancelled": 1997
+      },
+      "effects": 7919,
+      "reclaimed": 18,
+      "max_attempt": 2,
+      "bad_effect_rows": 0,
+      "leased_rows": 0,
+      "orphan_effects": 0
+    },
+    {
+      "directory": "evidence/chaos-runs/20261119T141042Z-ff62570c370f43f28430b36658238187",
+      "result": "INCOMPLETE",
+      "config": "2026-11-19T14:10:42.649+00:00 +    0.02s config prefix=chaos-ff62570c370f43f28430b36658238187- mode=docker jobs=10000 workers=8 clients=32 work_ms=120 seed=20261120 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T141042Z-ff62570c370f43f28430b36658238187",
+      "kills": 52,
+      "kill_interval_seconds": {
+        "min": 1.9799999999999898,
+        "median": 2.2299999999999898,
+        "max": 8.170000000000002
+      },
+      "client_keys": 10000,
+      "client_errors": 0,
+      "cancel_wins": 1998
+    }
+  ],
+  "load": []
+}
