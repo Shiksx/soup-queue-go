@@ -1,0 +1,58 @@
+x-app: &app
+  image: soup-queue:local
+  build: .
+  environment:
+    DATABASE_URL: postgres://queue:queue@db:5432/queue?sslmode=disable
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: queue
+      POSTGRES_PASSWORD: queue
+      POSTGRES_DB: queue
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U queue -d queue"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  migrate:
+    <<: *app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["migrate"]
+
+  api:
+    <<: *app
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    command: ["api"]
+    ports: ["127.0.0.1:8080:8080"]
+
+  worker:
+    <<: *app
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    command: ["worker"]
+    scale: 4
+
+  test:
+    profiles: ["test"]
+    build:
+      context: .
+      target: build
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      TEST_DATABASE_URL: postgres://queue:queue@db:5432/queue?sslmode=disable
+    command: ["go", "test", "-count=1", "-v", "."]
+
+volumes:
+  pgdata:

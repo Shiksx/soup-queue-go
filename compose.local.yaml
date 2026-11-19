@@ -1,0 +1,4 @@
+# Optional localhost DB port for actual native worker processes in chaos testing.
+services:
+  db:
+    ports: ["127.0.0.1:54329:5432"]

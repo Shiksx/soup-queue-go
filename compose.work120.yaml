@@ -1,0 +1,5 @@
+# Optional slower-work profile for capacity experiments. Merge with compose.yaml.
+services:
+  worker:
+    environment:
+      WORK_MS: "120"

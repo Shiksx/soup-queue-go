@@ -1,0 +1,71 @@
+2026-11-19T14:05:51.936+00:00 +    0.04s config prefix=chaos-0ecf6071a5074219b29960684efb4f7b- mode=docker jobs=10000 workers=8 clients=32 work_ms=120 seed=20261119 kill_interval=2.0 drain_timeout=300.0 output=evidence/chaos-runs/20261119T140551Z-0ecf6071a5074219b29960684efb4f7b
+2026-11-19T14:05:54.853+00:00 +    2.95s worker_start slot=0 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-1
+2026-11-19T14:06:03.755+00:00 +   11.86s worker_start slot=1 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w1-1
+2026-11-19T14:06:11.691+00:00 +   19.79s worker_start slot=2 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w2-1
+2026-11-19T14:06:19.903+00:00 +   28.01s worker_start slot=3 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w3-1
+2026-11-19T14:06:24.602+00:00 +   32.70s worker_start slot=4 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w4-1
+2026-11-19T14:06:28.279+00:00 +   36.38s worker_start slot=5 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w5-1
+2026-11-19T14:06:31.381+00:00 +   39.48s worker_start slot=6 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w6-1
+2026-11-19T14:06:34.626+00:00 +   42.73s worker_start slot=7 generation=1 process=chaos-0ecf6071a5074219b29960684efb4f7b-w7-1
+2026-11-19T14:06:39.934+00:00 +   48.03s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:07:03.649+00:00 +   71.75s worker_start slot=7 generation=2 process=chaos-0ecf6071a5074219b29960684efb4f7b-w7-2
+2026-11-19T14:07:11.191+00:00 +   79.29s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:07:34.573+00:00 +  102.70s worker_start slot=3 generation=2 process=chaos-0ecf6071a5074219b29960684efb4f7b-w3-2
+2026-11-19T14:07:46.484+00:00 +  114.59s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:08:16.144+00:00 +  144.24s worker_start slot=0 generation=2 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-2
+2026-11-19T14:08:22.036+00:00 +  150.14s clients_done keys_seen=10000 requests=20000 errors=0 http_retries=0 cancel_wins=1997
+2026-11-19T14:08:22.877+00:00 +  150.98s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:08:24.638+00:00 +  152.74s db_progress status={'failed': 33, 'succeeded': 3097, 'cancelled': 1997, 'running': 7, 'queued': 4866} kills=4
+2026-11-19T14:08:26.663+00:00 +  154.76s worker_start slot=4 generation=2 process=chaos-0ecf6071a5074219b29960684efb4f7b-w4-2
+2026-11-19T14:08:29.107+00:00 +  157.21s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:08:34.914+00:00 +  163.01s db_progress status={'failed': 38, 'succeeded': 3586, 'cancelled': 1997, 'running': 6, 'queued': 4373} kills=5
+2026-11-19T14:08:35.143+00:00 +  163.24s worker_start slot=7 generation=3 process=chaos-0ecf6071a5074219b29960684efb4f7b-w7-3
+2026-11-19T14:08:37.312+00:00 +  165.41s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:08:40.538+00:00 +  168.64s worker_start slot=5 generation=2 process=chaos-0ecf6071a5074219b29960684efb4f7b-w5-2
+2026-11-19T14:08:43.484+00:00 +  171.58s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:08:47.560+00:00 +  175.66s db_progress status={'failed': 44, 'succeeded': 4099, 'cancelled': 1997, 'running': 7, 'queued': 3853} kills=7
+2026-11-19T14:08:50.337+00:00 +  178.44s worker_start slot=0 generation=3 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-3
+2026-11-19T14:08:52.343+00:00 +  180.44s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:08:56.285+00:00 +  184.39s worker_start slot=4 generation=3 process=chaos-0ecf6071a5074219b29960684efb4f7b-w4-3
+2026-11-19T14:08:58.523+00:00 +  186.62s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:08:59.104+00:00 +  187.21s db_progress status={'failed': 49, 'succeeded': 4663, 'cancelled': 1997, 'running': 6, 'queued': 3285} kills=9
+2026-11-19T14:09:03.584+00:00 +  191.69s worker_start slot=0 generation=4 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-4
+2026-11-19T14:09:05.854+00:00 +  193.96s worker_exit slot=2 deliberate_kill=True exit=137
+2026-11-19T14:09:08.986+00:00 +  197.09s worker_start slot=2 generation=2 process=chaos-0ecf6071a5074219b29960684efb4f7b-w2-2
+2026-11-19T14:09:09.913+00:00 +  198.01s db_progress status={'failed': 54, 'succeeded': 5145, 'cancelled': 1997, 'running': 8, 'queued': 2796} kills=10
+2026-11-19T14:09:10.808+00:00 +  198.91s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:09:16.730+00:00 +  204.83s worker_start slot=4 generation=4 process=chaos-0ecf6071a5074219b29960684efb4f7b-w4-4
+2026-11-19T14:09:19.020+00:00 +  207.12s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:09:21.690+00:00 +  209.79s db_progress status={'failed': 60, 'succeeded': 5656, 'cancelled': 1997, 'running': 7, 'queued': 2280} kills=12
+2026-11-19T14:09:24.982+00:00 +  213.08s worker_start slot=0 generation=5 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-5
+2026-11-19T14:09:27.012+00:00 +  215.11s worker_exit slot=7 deliberate_kill=True exit=137
+2026-11-19T14:09:32.514+00:00 +  220.61s worker_start slot=7 generation=4 process=chaos-0ecf6071a5074219b29960684efb4f7b-w7-4
+2026-11-19T14:09:33.197+00:00 +  221.30s db_progress status={'failed': 65, 'succeeded': 6178, 'cancelled': 1997, 'running': 8, 'queued': 1752} kills=13
+2026-11-19T14:09:34.759+00:00 +  222.86s worker_exit slot=5 deliberate_kill=True exit=137
+2026-11-19T14:09:39.983+00:00 +  228.08s worker_start slot=5 generation=3 process=chaos-0ecf6071a5074219b29960684efb4f7b-w5-3
+2026-11-19T14:09:42.094+00:00 +  230.20s worker_exit slot=4 deliberate_kill=True exit=137
+2026-11-19T14:09:44.343+00:00 +  232.44s db_progress status={'failed': 71, 'succeeded': 6694, 'cancelled': 1997, 'running': 6, 'queued': 1232} kills=15
+2026-11-19T14:09:47.888+00:00 +  235.99s worker_start slot=4 generation=5 process=chaos-0ecf6071a5074219b29960684efb4f7b-w4-5
+2026-11-19T14:09:50.618+00:00 +  238.72s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:09:55.018+00:00 +  243.12s worker_start slot=3 generation=3 process=chaos-0ecf6071a5074219b29960684efb4f7b-w3-3
+2026-11-19T14:09:55.383+00:00 +  243.48s db_progress status={'failed': 76, 'succeeded': 7144, 'cancelled': 1997, 'queued': 783} kills=16
+2026-11-19T14:09:57.098+00:00 +  245.20s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:09:59.972+00:00 +  248.07s worker_start slot=0 generation=6 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-6
+2026-11-19T14:10:02.213+00:00 +  250.31s worker_exit slot=0 deliberate_kill=True exit=137
+2026-11-19T14:10:04.851+00:00 +  252.95s worker_start slot=0 generation=7 process=chaos-0ecf6071a5074219b29960684efb4f7b-w0-7
+2026-11-19T14:10:07.394+00:00 +  255.49s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:10:07.692+00:00 +  255.79s db_progress status={'failed': 81, 'succeeded': 7704, 'cancelled': 1997, 'running': 6, 'queued': 212} kills=19
+2026-11-19T14:10:13.037+00:00 +  261.14s worker_start slot=3 generation=4 process=chaos-0ecf6071a5074219b29960684efb4f7b-w3-4
+2026-11-19T14:10:15.183+00:00 +  263.28s db_progress status={'failed': 84, 'succeeded': 7919, 'cancelled': 1997} kills=19
+2026-11-19T14:10:15.658+00:00 +  263.76s worker_exit slot=3 deliberate_kill=True exit=137
+2026-11-19T14:10:21.662+00:00 +  269.76s worker_start slot=3 generation=5 process=chaos-0ecf6071a5074219b29960684efb4f7b-w3-5
+2026-11-19T14:10:22.898+00:00 +  271.00s worker_exit slot=0 deliberate_kill=False exit=0
+2026-11-19T14:10:23.726+00:00 +  271.83s worker_exit slot=1 deliberate_kill=False exit=0
+2026-11-19T14:10:25.105+00:00 +  273.21s worker_exit slot=2 deliberate_kill=False exit=0
+2026-11-19T14:10:25.849+00:00 +  273.95s worker_exit slot=3 deliberate_kill=False exit=0
+2026-11-19T14:10:26.584+00:00 +  274.68s worker_exit slot=4 deliberate_kill=False exit=0
+2026-11-19T14:10:28.320+00:00 +  276.42s worker_exit slot=5 deliberate_kill=False exit=0
+2026-11-19T14:10:30.544+00:00 +  278.64s worker_exit slot=6 deliberate_kill=False exit=0
+2026-11-19T14:10:31.354+00:00 +  279.45s worker_exit slot=7 deliberate_kill=False exit=0
+2026-11-19T14:10:32.280+00:00 +  280.38s assertion_summary observed=10000 expected=10000 worker_kills=20 reclaimed_jobs=18 effects=7919
+2026-11-19T14:10:32.281+00:00 +  280.38s RESULT PASS

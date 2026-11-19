@@ -1,0 +1,15 @@
+/queue
+__pycache__/
+*.py[cod]
+*.exe
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.zip
+*.bundle
+/private/
+/scratch/
+# Evidence, including failed runs, is intentionally tracked.
